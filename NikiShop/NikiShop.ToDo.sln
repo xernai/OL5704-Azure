@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NikiShop.ToDo.WebApi", "backend\NikiShop.ToDo.WebApi\NikiShop.ToDo.WebApi.csproj", "{B2247006-9EFB-4C6D-9447-F133F0F945D9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NikiShop.ToDo.MvcClient", "frontend\NikiShop.ToDo.MvcClient\NikiShop.ToDo.MvcClient.csproj", "{7B2EC9C3-97D7-41D2-B59B-C7DC71287354}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NikiShop.ToDo.WebApiNET7", "backend\NikiShop.ToDo.WebApiNET7\NikiShop.ToDo.WebApiNET7.csproj", "{A247CA36-8BB1-4CA0-8FB5-D59628199F62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NikiShop.ToDo.WebApiNET8", "backend\NikiShop.ToDo.WebApiNET8\NikiShop.ToDo.WebApiNET8.csproj", "{911BEF86-CF54-44B8-AFCF-3162BF08FF03}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B2247006-9EFB-4C6D-9447-F133F0F945D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2247006-9EFB-4C6D-9447-F133F0F945D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2247006-9EFB-4C6D-9447-F133F0F945D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2247006-9EFB-4C6D-9447-F133F0F945D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B2EC9C3-97D7-41D2-B59B-C7DC71287354}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B2EC9C3-97D7-41D2-B59B-C7DC71287354}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B2EC9C3-97D7-41D2-B59B-C7DC71287354}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B2EC9C3-97D7-41D2-B59B-C7DC71287354}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A247CA36-8BB1-4CA0-8FB5-D59628199F62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A247CA36-8BB1-4CA0-8FB5-D59628199F62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A247CA36-8BB1-4CA0-8FB5-D59628199F62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A247CA36-8BB1-4CA0-8FB5-D59628199F62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{911BEF86-CF54-44B8-AFCF-3162BF08FF03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{911BEF86-CF54-44B8-AFCF-3162BF08FF03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{911BEF86-CF54-44B8-AFCF-3162BF08FF03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{911BEF86-CF54-44B8-AFCF-3162BF08FF03}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {05834684-966F-4300-B905-374898453777}
+	EndGlobalSection
+EndGlobal

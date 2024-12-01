@@ -1,0 +1,9 @@
+1. Configurar appsettings.json para especificar url base
+2. Configurar HttpClient en el Startup.cs
+3. Configurar CORS en el Startup.cs (cuando el dominio es diferente)
+4. Configurar parámetro client de tipo HttpClient en el constructor del controller
+   y asignarlo al campo _client
+5. Invocar al metodo _client.GetAsync(_scriptsApiUrl) en action method llamado Index
+6. Leer el flujo de datos del GetAsync y asignarlo a una variable de tipo string
+7. Deserializar los datos en json a una colección del modelo ToDoList
+8. Configurar la solución para ejecución múltiple de los proyectos
