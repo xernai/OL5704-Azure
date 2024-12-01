@@ -15,25 +15,25 @@ namespace Azure.Functions.HttpTriggerPosts
     }
     public class Function1
     {
-        //private readonly ILogger<Function1> _logger;
+        private readonly ILogger<Function1> _logger;
 
-        //public Function1(ILogger<Function1> logger)
-        //{
-        //    _logger = logger;
-        //}
+        public Function1(ILogger<Function1> logger)
+        {
+            _logger = logger;
+        }
 
         [Function("Function1")]
-        public IActionResult Run([HttpTrigger(AuthorizationLevel.Anonymous, "get", "post")] HttpRequest req, ILogger log)
+        public IActionResult Run([HttpTrigger(AuthorizationLevel.Anonymous, "get", "post")] HttpRequest req)
         {
-            log.LogInformation("C# HTTP trigger function processed a request.");
+            _logger.LogInformation("C# HTTP trigger function processed a request.");
             return new OkObjectResult("Welcome to Azure Functions!");
         }
 
         [Function("GetAllPosts")]
-        public static async Task<IActionResult> Posts(
-        [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = null)] HttpRequest req, ILogger log)
+        public async Task<IActionResult> Posts(
+        [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = null)] HttpRequest req)
         {
-            log.LogInformation("C# HTTP trigger function processed a request.");
+            _logger.LogInformation("C# HTTP trigger function processed a request.");
             var client = new HttpClient();
             var response = await client.GetAsync($"https://jsonplaceholder.typicode.com/posts");
 
